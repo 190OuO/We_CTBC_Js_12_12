@@ -83,6 +83,107 @@ if (false) {             //if (假如是false 則不會執行 且字顏色會變
     console.log("這裡是判斷式");  // 這邊
 }
 
+let score = 60;
+
+if (score>=90){
+    console.log("你的評級:A");
+}
+else if(score>=80){
+    console.log("你的評級:A-");
+}
+else if(score>=75){
+    console.log("你的評級:A");
+}
+else if(score>=70){
+    console.log("你的評級:B+");
+}
+else if(score>=65){
+    console.log("你的評級:B-");
+}
+else if(score>=60){
+    console.log("你的評級:B");
+}
+else{
+    console.log("你的評級:F");
+}
+
+// 判斷玩家生命值 
+
+let HP=0;
+
+if (HP>=60){
+    console.log("你的血量很健康")
+}
+else if (HP<=60 && HP >0){
+    console.log("你需要補血")
+}
+else if (HP<60){
+    console.log("你已死亡")
+}
+
+console.log("%c迴圈","color:gold");
+// for 迴圈
+// for 語法:
+// for (初始值; 條件 選代器) {程式區塊 }
+for(let index =0; index <=5; index++){
+    console.log("迴圈",index);
+    // alert("笑你關不掉")
+}
+
+// 變數
+let letCount =1;
+letCount =2;
+letCount =3;
+
+// 常數(不可變的數值)
+const constConst =1;
+//  constConst =2;          //產生錯誤，原因:常數不可改變
+
+// 不可重新定義
+// let letCount =10;        //產生錯誤，原因:重複宣告
+// const constCount =10;    //產生錯誤，原因:重複宣告
+
+// 常數命名習慣會使用全大寫並使用底線區隔
+const PI =3.14
+const WEB_FONT_SIZE = 24;
+
+//  變數 var (variable)
+var varCount =1;
+varCount =123;
+var varCount =3;      //可重新賦予值
+console.log(varCount); //可重新定義(不建議)
+
+// 作用域 Scope {} 
+// let 與 const 的作用域都在{}區塊內
+{
+    let letTest =1;
+    const constTest =1;
+    var varTest =1;
+    console.log("let:"+letTest); 
+    console.log("const:"+constTest);
+    console.log("var:"+varTest );
+}
+/* 
+console.log("let:"+letTest);     錯誤 超出作用域
+console.log("const",constTest);  錯誤 超出作用域
+ */
+console.log("var",varTest);
+
+console.log("cfunction 函式、方法或功能","color: gold")
+//函數語法
+
+// function 函式名稱(){ }
+function logLine(){
+    console.log("%c ----我是分隔線----","color: gold");
+}
+
+// 函式需要被呼叫:函式名稱();
+logLine();
+logLine();
+logLine();
+logLine();
+logLine();
+
 
 
 
